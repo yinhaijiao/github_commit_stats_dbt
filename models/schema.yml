@@ -22,8 +22,7 @@ metrics:
     description: "A count metric for users"
 
     type: count_distinct
-    type_params:
-      column: author_id  # 根据需要添加参数
+    type_params: {}
 
     timestamp: timestamp
     time_grains: [day, week, month, year]
