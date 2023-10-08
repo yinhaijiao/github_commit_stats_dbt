@@ -7,10 +7,11 @@ metrics:
     description: "A count metric for commits"
 
     type: count
+    type_params:
+      count: true
 
     timestamp: timestamp
     time_grains: [day, week, month, year]
-    type_params: {}
 
     dimensions:
       - author_domain
@@ -22,6 +23,8 @@ metrics:
     description: "A count metric for users"
 
     type: count_distinct
+    type_params:
+      field: author_id
     sql: author_id
 
     timestamp: timestamp
