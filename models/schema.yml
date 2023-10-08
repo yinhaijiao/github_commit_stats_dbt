@@ -10,6 +10,7 @@ metrics:
 
     timestamp: timestamp
     time_grains: [day, week, month, year]
+    type_params: {}
 
     dimensions:
       - author_domain
@@ -25,6 +26,7 @@ metrics:
 
     timestamp: timestamp
     time_grains: [day, week, month, year]
+    type_params: {}
 
     dimensions:
       - author_domain
