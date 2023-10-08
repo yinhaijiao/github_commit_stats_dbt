@@ -7,7 +7,7 @@ metrics:
     description: "A count metric for commits"
 
     type: count
-    type_params: {}  # 可以根据需要添加参数
+    type_params: {}
 
     timestamp: timestamp
     time_grains: [day, week, month, year]
@@ -23,6 +23,8 @@ metrics:
 
     type: count_distinct
     type_params: {}
+    
+    sql: author_id
 
     timestamp: timestamp
     time_grains: [day, week, month, year]
